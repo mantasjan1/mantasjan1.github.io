@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprendinys</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+        </style>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Sprendinys-logos_white.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Pradžia</a></li>
+                    <li><a href="#about">Apie</a></li>
+                    <li><a href="#services">Paslaugos</a></li>
+                    <li><a href="#contact">Kontaktai</a></li>
+                    <i class="material-icons" id="closing" onclick="closemenu()">close</i>
+                </ul>
+                <i class="material-icons" id="opening" onclick="openmenu()">menu</i>
+            </nav>
+            <div class="header-text">
+                <p>Matematikos korepetitorius</p>
+                <h1>Sveiki, aš esu <span>Mantas</span>,<br> jūsų būsimas korepetitorius</h1>
+            </div>
+        </div>
+    </div>
+
+<!---------------about------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="colorkit.svg" id="student">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" style="text-decoration: underline;">Apie mane</h1>
+                    <p id="apie-mane">Šiuo metu esu VU Matematikos ir informatikos fakulteto studentas, trokštantis pasidalinti savo matematine išmintimi su įvairaus lygio mokiniais. Nuo pat mažens mane domino matematikos pasaulis, loginis mąstymas bei problemų sprendimas - ir tikiu, kad kiekvienas mokinys gali pats "prisijaukinti" dalelę matematikos.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Tikslas</p>
+                        <p class="tab-links" onclick="opentab('experience')">Patirtis</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Mokinio įgūdžių analizė</span><br>- Prieš pirmąją pamoką nustatyti mokinio(ės) spragas, taip palengvinant tolimesnį mokymo planą</li>
+                            <li><span>Kantrybė ir supratingumas</span><br>- Stengiamąsi palaikyti jaukią mokymo aplinką, kurioje mokinys(ė) galėtų tobulėti savo tempu</li>
+                            <li><span>Įvairių temų ir uždavinių išaiškinimas</span><br>- Aiškiai bei suprantamai perteikti mokyklinio kurso medžiagą, pagrindines temų idėjas bei uždavinių sprendimo strategiją</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Studijos Vilniaus universitete</span><br>- 3 metai matematikos studijų patirties;</li>
+                            <li><span>Patirtis už mokyklos ribų</span><br>- Matematikos konkursų ir olimpiadų dalyvis;</li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!---------------services------------->
+
+   <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Ką galiu Jums suteikti?</h1>
+            <div class="services-list">
+                <div>
+                    
+                    <h2>Individualias pamokas gyvai</h2>
+                    <p>Individualios pamokos, t.y. pamokoje dalyvauja korepetitorius ir mokinys, yra vykdomos gyvai Klaipėdoje ir Klaipėdos rajone. Galiu atvykti pas jumis į namus.
+                    </p>
+                    
+                </div>
+                <div>
+                    
+                    <h2>Pamokas 5-12 klasių mokiniams</h2>
+                    <p>Esu pasiruošęs padėti lengviau suprasti matematikos pasaulį 5-12 klasių mokiniams, ir nesvarbu, kokio lygmens yra Jūsų matematikos žinios, kiekvienas mokinys yra nuoširdžiai laukiamas!</p>
+                    
+                </div>
+                <div>
+                    
+                    <h2>Draugišką mokymosi aplinką</h2>
+                    <p>Pamokų metu bus bandoma sudaryti nuoširdžią bei jaukią mokymosi aplinką, kurioje mokinys nebijotų klysti bei drąsiai ieškotų problemų sprendimo būdų
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+   </div>
+
+<!-------------------contacts----------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Kontaktai</h1>
+                
+                
+                <p>El. paštas: sprendinys.info@inbox.lt</p>
+                
+                <div class="social-icons">
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Jūsų vardas" required>
+                    <input type="email" name="Email" placeholder="El. paštas" required>
+                    <textarea name="Message" rows="6" placeholder="Jūsų žinutė"></textarea>
+                    <button role="button" class="button-27">Siųsti</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sprendinys. Made by Mantas J. 2023</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxzXyTennEoGQBGe9uk-4czO8ARbQc5MxU_ls1dyhm21v4bzV7-uwLg_MUJtLYIq-I/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 2500)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+  </script>
+</body>
+</html>
