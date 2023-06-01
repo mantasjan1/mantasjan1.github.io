@@ -188,6 +188,10 @@ nav ul li a:hover::after{
     
 }
 
+.services-list div p {
+    font-size: 16px;
+}
+
 .services-list div{
     background: #5D737E;
     padding: 40px;
@@ -207,6 +211,7 @@ nav ul li a:hover::after{
     font-weight: bold;
     margin-bottom: 15px;
     font-style: italic;
+    text-decoration: underline;
 }
 
 .services-list div a{
