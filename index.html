@@ -26,9 +26,9 @@
             <nav>
                 <img src="Sprendinys-logos_white.png" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Pradžia</a></li>
                     <li><a href="#about">Apie</a></li>
                     <li><a href="#services">Paslaugos</a></li>
+                    <li><a href="#registracija">Registracija</a></li>
                     <li><a href="#contact">Kontaktai</a></li>
                     <i class="material-icons" id="closing" onclick="closemenu()">close</i>
                 </ul>
@@ -93,7 +93,7 @@
                 <div>
                     
                     <h2>Pamokas 5-12 klasių mokiniams</h2>
-                    <p>Esu pasiruošęs padėti lengviau suprasti matematikos pasaulį 5-12 klasių mokiniams, ir nesvarbu, kokio lygmens yra Jūsų matematikos žinios, kiekvienas mokinys yra nuoširdžiai laukiamas!</p>
+                    <p>Esu pasiruošęs padėti lengviau suprasti matematikos pasaulį 5-12 klasių mokiniams, ir nesvarbu, kokio lygmens yra Jūsų matematikos žinios, kiekvienas mokinys yra nuoširdžiai laukiamas.</p>
                     
                 </div>
                 <div>
@@ -106,6 +106,28 @@
             </div>
         </div>
    </div>
+
+<!-------------------registracija----------->
+
+<section id="registracija">
+    <h2 id="reg">Registracija</h2>
+    <iframe id="appointy-iframe" class="no-border" src="https://booking.appointy.com/sprendinys?isgadget=1&autoheight=1"  scrolling="no" width="50%"  frameBorder="0"></iframe>
+    <script>
+        (function() {
+            const ifrm = document.getElementById("appointy-iframe");
+            window.addEventListener("message", function (e) {
+                const d = e.data || {};
+                if (d.type === "height"){
+                    ifrm.style.height = d.data + "px";
+                }
+                if (d.type === "scroll") {
+                    ifrm.scrollIntoView();
+                }
+            });
+        })();
+    </script>
+
+</section>
 
 <!-------------------contacts----------->
 
