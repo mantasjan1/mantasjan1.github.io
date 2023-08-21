@@ -1,217 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprendinys</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="icon" type="image/png" href="Sprendinys-logos_white.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="Sprendinys-logos_white.png" sizes="32x32">
-    <style>
-        .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 48
-        }
-        </style>
-    
-</head>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Sprendinys - matematikos pamokos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/Sprendinys-logos_black.png">
+<!--
+
+TemplateMo 573 EduWell
+
+https://templatemo.com/tm-573-eduwell
+
+-->
+  </head>
+
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="Sprendinys-logos_white.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#about">Apie</a></li>
-                    <li><a href="#services">Paslaugos</a></li>
-                    <li><a href="#registracija">Registracija</a></li>
-                    <li><a href="#contact">Kontaktai</a></li>
-                    <i class="material-icons" id="closing" onclick="closemenu()">close</i>
-                </ul>
-                <i class="material-icons" id="opening" onclick="openmenu()">menu</i>
-            </nav>
-            <div class="header-text">
-                <p>Matematikos korepetitorius</p>
-                <h1>Sveiki, aš esu <span>Mantas</span>,<br> jūsų būsimas korepetitorius</h1>
-            </div>
-        </div>
-    </div>
 
-<!---------------about------------->
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="colorkit.svg" id="student">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title" style="text-decoration: underline;">Apie mane</h1>
-                    <p id="apie-mane">Šiuo metu esu VU Matematikos ir informatikos fakulteto studentas, trokštantis pasidalinti savo matematine išmintimi su įvairaus lygio mokiniais. Nuo pat mažens mane domino matematikos pasaulis, loginis mąstymas bei problemų sprendimas - ir tikiu, kad kiekvienas mokinys gali pats "prisijaukinti" dalelę matematikos.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Tikslas</p>
-                        <p class="tab-links" onclick="opentab('experience')">Patirtis</p>
-                        
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Mokinio įgūdžių analizė</span><br>- Prieš pirmąją pamoką nustatyti mokinio(ės) spragas, taip palengvinant tolimesnį mokymo planą</li>
-                            <li><span>Kantrybė ir supratingumas</span><br>- Stengiamąsi palaikyti jaukią mokymo aplinką, kurioje mokinys(ė) galėtų tobulėti savo tempu</li>
-                            <li><span>Įvairių temų ir uždavinių išaiškinimas</span><br>- Aiškiai bei suprantamai perteikti mokyklinio kurso medžiagą, pagrindines temų idėjas bei uždavinių sprendimo strategiją</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Studijos Vilniaus universitete</span><br>- 3 metai matematikos studijų patirties;</li>
-                            <li><span>Patirtis už mokyklos ribų</span><br>- Matematikos konkursų ir olimpiadų dalyvis;</li>
-                            
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          <img src="assets/images/Sprendinys-logos_white.png" alt="EduWell Template">
+                      </a>
+                      <h1 id="titulinis">Sprendinys</h1>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="#top" class="active">Pradžia</a></li>
+                          <li><a href="about-us.html">Apie mane</a></li>
+                          <li class="scroll-to-section"><a href="#services">Privalumai</a></li>
+                          <li class="scroll-to-section"><a href="#courses">Paslaugos</a></li>
+                          <!-- <li class="scroll-to-section"><a href="#testimonials">Atsiliepimai</a></li> -->
+                          <li><a href="contact-us.html">Susisiekite</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Meniu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
 
-   <!---------------services------------->
-
-   <div id="services">
-        <div class="container">
-            <h1 class="sub-title">Ką galiu Jums suteikti?</h1>
-            <div class="services-list">
-                <div>
-                    
-                    <h2>Individualias pamokas gyvai</h2>
-                    <p>Individualios pamokos, t.y. pamokoje dalyvauja korepetitorius ir mokinys, yra vykdomos gyvai Klaipėdoje ir Klaipėdos rajone. Galiu atvykti pas jumis į namus.
-                    </p>
-                    
-                </div>
-                <div>
-                    
-                    <h2>Pamokas 5-12 klasių mokiniams</h2>
-                    <p>Esu pasiruošęs padėti lengviau suprasti matematikos pasaulį 5-12 klasių mokiniams, ir nesvarbu, kokio lygmens yra Jūsų matematikos žinios, kiekvienas mokinys yra nuoširdžiai laukiamas.</p>
-                    
-                </div>
-                <div>
-                    
-                    <h2>Draugišką mokymosi aplinką</h2>
-                    <p>Pamokų metu bus bandoma sudaryti nuoširdžią bei jaukią mokymosi aplinką, kurioje mokinys nebijotų klysti bei drąsiai ieškotų problemų sprendimo būdų
-                    </p>
-                    
-                </div>
-            </div>
-        </div>
-   </div>
-
-<!-------------------registracija----------->
-
-<section id="registracija">
-    <h2 id="reg">Registracija</h2>
-    <iframe id="appointy-iframe" class="no-border" src="https://booking.appointy.com/sprendinys?isgadget=1&autoheight=1"  scrolling="no" width="50%"  frameBorder="0"></iframe>
-    <script>
-        (function() {
-            const ifrm = document.getElementById("appointy-iframe");
-            window.addEventListener("message", function (e) {
-                const d = e.data || {};
-                if (d.type === "height"){
-                    ifrm.style.height = d.data + "px";
-                }
-                if (d.type === "scroll") {
-                    ifrm.scrollIntoView();
-                }
-            });
-        })();
-    </script>
-
-</section>
-
-<!-------------------contacts----------->
-
-<div id="contact">
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="main-banner" id="top">
     <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Kontaktai</h1>
-                
-                
-                <p>El. paštas: sprendinys.info@inbox.lt</p>
-                
-                <div class="social-icons">
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                </div>
-                
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="header-text">
+            <h6>Sveiki atvykę!</h6>
+            <h2>Individualios matematikos pamokos <em>gyvai Vilniuje!</em></h2>
+            <div class="main-button-gradient">
+              <div class="scroll-to-section"><a href="#contact-section">Prisijunkite</a></div>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Jūsų vardas" required>
-                    <input type="email" name="Email" placeholder="El. paštas" required>
-                    <textarea name="Message" rows="6" placeholder="Jūsų žinutė"></textarea>
-                    <button role="button" class="button-27">Siųsti</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+          </div>
         </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="assets/images/1692456256798.jpg" id="pirma">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="copyright">
-        <p>Copyright © Sprendinys. Made by Mantas J. 2023</p>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            
+            <h4>Matematikos pamokų <em>privalumai</em></h4>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="assets/images/service-icon-01.png" alt="">
+                </div>
+                <h4>Mokinio įgūdžių analizė</h4>
+                <p>Prieš pirmąją pamoką nustatyti mokinio spragas, taip palengvinant tolimesnį mokymo planą</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="assets/images/service-icon-02.png" alt="">
+                </div>
+                <h4>Įvairių temų ir uždavinių išaiškinimas</h4>
+                <p>Aiškiai bei suprantamai perteikti mokyklinio kurso medžiagą, pagrindines temų idėjas bei uždavinių sprendimo strategiją</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="assets/images/service-icon-03.png" alt="">
+                </div>
+                <h4>Kantrybė ir supratingumas</h4>
+                <p>Stengiamąsi palaikyti jaukią mokymo aplinką, kurioje mokinys galėtų tobulėti savo tempu</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="assets/images/service-icon-04.png" alt="">
+                </div>
+                <h4>Patogumas</h4>
+                <p>Galimybė atvykti į jūsų namus Vilniuje individualioms pamokoms.</p>
+              </div>
+            </div>
+            <!-- <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="assets/images/service-icon-01.png" alt="">
+                </div>
+                <h4>Useful Tricks</h4>
+                <p>In non nisi eget magna efficitur ultricies non quis sapien. Pellentesque tellus.</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </section>
 
-<script>
+  <section class="our-courses" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            
+            <h4>Mūsų <em>paslaugos</em></h4>
+            <p>Sprendinys.lt papildomos matematikos pamokos bei pagalba mokiniui suteikia individualų dėmesį ir požiūrį. Supratinga mokymosi aplinka leis išugdyti pasitikėjimą savimi, nebijojimą klysti ir mokymąsi iš klaidų. </p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="tabs">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="menu">
+                    <div class="active gradient-border"><span>Individualios pamokos gyvai</span></div>
+                    <div class="gradient-border"><span>Nuolatinė pagalba internetu</span></div>
+                    <div class="gradient-border"><span>Išsamus pasiruošimas VBE</span></div>
+                    <!-- <div class="gradient-border"><span>WordPress</span></div> -->
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="left-image">
+                          <img src="assets/images/school-1782427_1280.jpg" alt="" id="pirmas_kursas">
+                          <div class="price"><h6>15€/pamoka</h6></div>
+                        </div>
+                        <div class="right-content">
+                          <h4>Individualios pamokos gyvai</h4>
+                          <p>Individualių matematikos pamokų metu šalinamos mokinio spragos, padedama įtvirtinti jau  įgautas matematines žinias bei įvairių temų aptarimas mokinio pageidavimu.
+                          <br><br>Ar tai pasiruošimas kontroliniui darbui, ar tai noras drąsiau jaustis matematikos pasaulyje, ar tai tikslas gauti šimtuką VBE Matematikos egzamine - Sprendinys.lt teikiamos individualios pamokos padės tai pasiekti!</p>
+                          <span>Rūpestinga aplinka</span>
+                          <span>Matematikos studento žinios</span>
+                          <span class="last-span">Pastangos suprantimui</span>
+                          <div class="text-button">
+                            <a href="contact-us.html">Užsiregistruokite</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="left-image">
+                          <img src="assets/images/courses-02.jpg" alt="">
+                          <div class="price"><h6>35€/mėnesiui</h6></div>
+                        </div>
+                        <div class="right-content">
+                          <h4>Nuolatinė pagalba internetu</h4>
+                          <p>Šią paslauga rekomenduojame norintiems įsigyti nuolatinį "pagalbininką" mokslo metų dienomis. Iškilus bet kokiam matematiniam klausimui ar užstrigus besprendžiant uždavinį, visados sulauksite pagalbos interneto pagalba - raštelėje žinutę mums ir netrukus gavus atsakymą.<br><br>Užsiprenumeravus šią paslaugą, sulauksite pagalbos matematikos klausimais darbo dienomis nuo 12:00 iki 20:00 vos jums spėjus sumirksėti! </p>
+                          <span>Greita pagalba</span>
+                          <span>Detalūs paaiškinimai</span>
+                          <span class="last-span">Rūpestis padedant suprasti</span>
+                          <div class="text-button">
+                            <a href="contact-us.html">Užsiregistruokite</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="left-image">
+                          <img src="assets/images/courses-03.jpg" alt="">
+                          <div class="price"><h6>250€</h6></div>
+                        </div>
+                        <div class="right-content">
+                          <h4>Išsamus pasiruošimas VBE</h4>
+                          <p>Tobulas kurso pasirinkimas norintiems išnagrinėti visas aktualias matematikos temas ir puikiai išlaikyti VBE matematikos egzaminą - tai auksinis bilietas galvojantiems apie nemokamas studijas!<br><br>Į šį kursą įeina "Nuolatinė pagalba internetu" bei 2 individualios pamokos per mėnesį, iki pat matematikos egzamino dienos.</p>
+                          <span>Nuolatinė pagalba internetu</span>
+                          <span>Apie 18 individualių pamokų</span>
+                          <span class="last-span">Aukštas įvertinimas matematikos egzamine!</span>
+                          <div class="text-button">
+                            <a href="contact-us.html">Užsiregistruokite</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- <li>
+                      <div>
+                        <div class="left-image">
+                          <img src="assets/images/courses-04.jpg" alt="">
+                          <div class="price"><h6>$76</h6></div>
+                        </div>
+                        <div class="right-content">
+                          <h4>WordPress Introduction</h4>
+                          <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan.<br><br>Kogi VHS freegan bicycle rights try-hard green juice probably haven't heard of them cliche la croix af chillwave.</p>
+                          <span>48 Hours</span>
+                          <span>4 Weeks</span>
+                          <span class="last-span">2 Certificates</span>
+                          <div class="text-button">
+                            <a href="contact-us.html">Subscribe Course</a>
+                          </div>
+                        </div>
+                      </div>
+                      </li> -->
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+  <section class="simple-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 offset-lg-1">
+          <div class="left-image">
+            <img src="assets/images/cta-left-image.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <h6>Gaukite nuolaidą jau dabar!</h6>
+          <h4>Nuolaidos iki 30 procentų</h4>
+          <p>Užsirezervavus 4 ar daugiau individualių pamokų, gaukite 30% nuolaidą</p>
+          <div class="white-button">
+            <a href="contact-us.html">Susisiekite</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+  <!-- <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h6>Atsiliepimai</h6>
+            <h4>Ką mano mūsų <em>moksleiviai ir jų tėvai</em></h4>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
+            <div class="item">
+              <p>“just think about TemplateMo if you need free CSS templates for your website”</p>
+                <h4>Catherine Walk</h4>
+                <span>CEO &amp; Founder</span>
+                <img src="assets/images/quote.png" alt="">
+            </div>
+            <div class="item">
+              <p>“think about our website first when you need free HTML templates for your website”</p>
+                <h4>David Martin</h4>
+                <span>CTO of Tech Company</span>
+                <img src="assets/images/quote.png" alt="">
+            </div>
+            <div class="item">
+              <p>“just think about our website wherever you need free templates for your website”</p>
+                <h4>Sophia Whity</h4>
+                <span>CEO and Co-Founder</span>
+                <img src="assets/images/quote.png" alt="">
+            </div>
+            <div class="item">
+              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
+                <h4>Helen Shiny</h4>
+                <span>Tech Officer</span>
+                <img src="assets/images/quote.png" alt="">
+            </div>
+            <div class="item">
+              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
+                <h4>George Soft</h4>
+                <span>Gadget Reviewer</span>
+                <img src="assets/images/quote.png" alt="">
+            </div>
+            <div class="item">
+              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
+                <h4>Andrew Hall</h4>
+                <span>Marketing Manager</span>
+                <img src="assets/images/quote.png" alt="">
+            </div>
+            <div class="item">
+              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
+                <h4>Maxi Power</h4>
+                <span>Fashion Designer</span>
+                <img src="assets/images/quote.png" alt="">
+            </div>
+            <div class="item">
+              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
+                <h4>Olivia Too</h4>
+                <span>Creative Designer</span>
+                <img src="assets/images/quote.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxzXyTennEoGQBGe9uk-4czO8ARbQc5MxU_ls1dyhm21v4bzV7-uwLg_MUJtLYIq-I/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 2500)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+  <section class="contact-us" id="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div id="map">
+          
+            <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36852.81985899201!2d25.242326499999997!3d54.73950489999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd910c48e8606d%3A0x2600d18d4c4546e1!2sFabijoni%C5%A1k%C4%97s%2C%20Vilnius%2C%20Vilnius%20City%20Municipality!5e0!3m2!1sen!2slt!4v1692454709348!5m2!1sen!2slt" width="100%" height="420px" frameborder="0" style="border:0; border-radius: 15px; position: relative; z-index: 2;" allowfullscreen=""></iframe>
+            <div class="row">
+              <div class="col-lg-4 offset-lg-1">
+                <div class="contact-info">
+                  <div class="icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <h4>Tel. numeris</h4>
+                  <span>+37062030499</span>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="contact-info">
+                  <div class="icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <h4>El. paštas</h4>
+                  <span>sprendinys.info@inbox.lt</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>Susisiekite</h6>
+                  <h4>Labas, <em>moksleivi</em></h4>
+                  <p>Norint užsiregistruoti ar iškilus klausimams, prašau drąsiai kreiptis užpildę šią formą arba susisiekti socialiniuose tinkluose</p>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Vardas ir pavardė" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="El. paštas" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" id="message" placeholder="Žinutė"></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-gradient-button">Siųsti</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-12">
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/profile.php?id=100093996747161"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://instagram.com/sprendinys.lt?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <p class="copyright">Copyright © 2023 Sprendinys.lt, Visos teisės saugomos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <script>
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    var sidemenu = document.getElementById("sidemenu");
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
 
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
 
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
 
-  </script>
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
 </body>
+
 </html>
